@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ThemeProvider } from '@material-ui/core/styles';
-import theme from './theme/theme';
+// import theme from './theme/theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider>
       <App />
     </ThemeProvider>
   </React.StrictMode>,
