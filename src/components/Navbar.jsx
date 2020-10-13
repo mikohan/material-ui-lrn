@@ -18,6 +18,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import Button from '@material-ui/core/Button';
 
 import Content from './Content';
 
@@ -108,9 +109,13 @@ export default function MiniDrawer() {
             <MenuIcon />
           </IconButton>
           <Link to="/">
-            <Typography variant="h6" noWrap>
-              Mini variant drawer
-            </Typography>
+            <Button>Mini variant drawer</Button>
+          </Link>
+          <Link to="/contact">
+            <Button>ContactsPage</Button>
+          </Link>
+          <Link to="/about">
+            <Button>AboutPage</Button>
           </Link>
         </Toolbar>
       </AppBar>
