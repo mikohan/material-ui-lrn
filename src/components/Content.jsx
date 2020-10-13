@@ -5,6 +5,8 @@ import { Route, Switch } from 'react-router-dom';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
 import ImageComponent from './ImageComponent';
+import Page_404 from './Page_404';
+import HomePage from './HomePage';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -48,6 +50,8 @@ function Content(props) {
             </Typography>
           )}
         />
+        <Route path="/" exact component={HomePage} />
+        <Route component={Page_404} />
       </Switch>
     </main>
   );
